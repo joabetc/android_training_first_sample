@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
                 if (edtUser.getText().toString().isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Type your login!",
                             Toast.LENGTH_SHORT).show();
+                } else if ("123".equals(edtPassword.getText().toString())) {
+                    Toast.makeText(getApplicationContext(), "You're logged in!",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });
